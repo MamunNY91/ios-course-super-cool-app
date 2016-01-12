@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var boom: UIImageView!
+    
+    @IBOutlet weak var bg: UIImageView!
+    @IBOutlet weak var cool: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +25,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func coolAction(sender: AnyObject) {
+        boom.hidden = false
+        bg.hidden = false
+        cool.hidden = true
+    }
 }
 
